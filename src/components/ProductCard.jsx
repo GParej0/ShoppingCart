@@ -7,7 +7,7 @@ export default function ProductCard ({product}){
     const {addToCart} = useContext(CartContext)
     function restNumber(count){
         if(count <= 1){
-            setCount(1)
+            return setCount(1)
         }
         setCount(count-1)
     }
