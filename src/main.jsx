@@ -4,27 +4,27 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import App from "./App.jsx";
 import Home from "./pages/home.jsx";
 import Products from "./pages/products.jsx";
-import Cart from "./pages/cart.jsx"
+import Cart from "./pages/cart.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
-    children:[
+    element: <App />,
+    children: [
       {
         index: true,
-        element : <Home/>
+        element: <Home />,
       },
       {
         path: "/products",
-        element : <Products/>
+        element: <Products />,
       },
       {
-        path: "/Cart",
-        element : <Cart/>
-      }
+        path: "/cart",
+        element: <Cart />,
+      },
     ],
-  }
+  },
 ]);
 
 const rootElement = document.getElementById("root");
@@ -32,6 +32,6 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>
 );
