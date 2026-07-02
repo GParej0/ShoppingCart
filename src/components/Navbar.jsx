@@ -17,7 +17,7 @@ export default function Nav(){
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="products">Products</Link></li>
-                    <li><Link to="cart">Cart {totalItems>0 && <span>{totalItems}</span>}</Link></li>
+                    <li><Link to="cart">Cart {totalItems>0 && <span className="totalItems">{totalItems}</span>}</Link></li>
                 </ul>
             </div>
         </nav>

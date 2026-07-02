@@ -1,10 +1,10 @@
 import {Link} from "react-router"
-
+import Diamond from "../assets/diamond-svgrepo-com.svg"
 export default function Home (){
     return (
     <div className="home-container">
       <div className="home-intro">
-        <img src="" alt="Diamond" />
+        <img src={Diamond} alt="Diamond" />
         <h1>Jewelry made to last</h1>
         <h2>Timeless pieces sourced from FakeStore's jewelery collection</h2>
         <Link to="products">Shop the collection</Link>
