@@ -29,6 +29,8 @@ body {
   line-height: 1.5;
   color: #222;
   background-color: #fafafa;
+  user-select: none;
+  cursor: default;
 }
 
 h1 {
@@ -64,6 +66,14 @@ nav {
   flex-wrap: wrap;
 }
 
+.navlist a {
+  transition: color 0.2s ease;
+}
+
+.navlist a:hover {
+  color: #b33f3f;
+}
+
 .totalItems{
   min-width: 20px;
   height: 20px;
@@ -95,6 +105,20 @@ nav {
   width: 10%;
 }
 
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.75rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
 .home-info ul {
   display: flex;
   justify-content: center;
@@ -102,6 +126,24 @@ nav {
   flex-wrap: wrap;
   margin-top: 1.5rem;
   text-align: center;
+}
+
+.home-info>ul>li{
+  display: flex;
+  flex-direction: column;
+  width: 27em;
+  height: 20%;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.home-info>ul>li:hover {
+  background-color: #f0f0f0;
+}
+.home-info>ul>li>img{
+  width: 10%;
 }
 
 .home-footer {
@@ -136,6 +178,12 @@ nav {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .productData img {
@@ -195,6 +243,11 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
+  transition: box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .cart-item img {
