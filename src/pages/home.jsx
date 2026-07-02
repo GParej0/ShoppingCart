@@ -13,7 +13,7 @@ export default function Home (){
         <Link to="products" className="cta-button">Browse the collection</Link>
       </div>
       <div className="home-info">
-        <h2>Why luxe.</h2>
+        <h2>Why luxe. ?</h2>
         <ul>
           <li>
             <img src={Certificate} alt="Certificate"/>

@@ -118,6 +118,9 @@ nav {
 .cta-button:hover {
   background-color: #555;
 }
+.home-info>h2{
+  text-align: center;
+}
 
 .home-info ul {
   display: flex;
